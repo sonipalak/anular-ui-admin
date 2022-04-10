@@ -1,0 +1,110 @@
+@import 'variables';
+@import 'mixins';
+
+.wrapper-for-user{
+    background-image:$theme-background-image;
+    @include background-image;
+    height:100vh;
+    position:relative;
+    .right-article{
+        background-color:$white;
+        position:absolute;
+        right:0;
+        top:0;
+        width:580px;
+        height:100%;
+        @include center-content;
+        .center-article{
+            width:80%;
+            .forgot-password-link{
+                text-align:right;
+                padding:10px 0 15px 0;
+                a{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color:$theme-color-dark;
+                    @include transition;
+                    &:hover{
+                        text-decoration:none;
+                    }
+                }
+                
+            }
+            .account-link{
+                text-align: center;
+                font-size: 16px;
+                padding:10px 0;
+                a{
+                    @include transition;
+                    font-weight: 500;
+                    color:$theme-color-dark;
+                    &:hover{
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.form-field {
+    margin-bottom: 10px;
+
+    .field-label {
+        font-size: 14px;
+        padding: 0 0 5px 0;
+        display: block;
+    }
+
+    .input-field {
+        width: 100%;
+
+        .mat-form-field {
+            width: 100%;
+
+            .mat-form-field-wrapper {
+                padding-bottom: 0;
+                .mat-form-field-flex{
+                    background-color:$white;
+                    padding:0;
+                    .mat-form-field-infix{
+                        padding: 0;
+                        width: 100%;
+                        border: #cecece solid 1px;
+                        border-radius: 5px;
+                        .mat-form-field-label-wrapper{
+                            display:none;
+                        }
+                        .mat-input-element{
+                            padding:15px 10px 12px 10px;
+                            font-size:16px;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+                .mat-form-field-underline{
+                    display:none;
+                }
+            }
+        }
+    }
+
+    .button-field{
+        padding:0;
+        .mat-flat-button{
+            width:100%;
+            border-radius:100px;
+            background-color:$theme-color-dark;
+            padding:8px 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+            @include transition;
+            &:hover{
+                background-color:$theme-color-dark-hover;
+                @include button-shadow;
+            }
+        }
+    }
+}

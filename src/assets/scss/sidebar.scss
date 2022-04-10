@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
+.accordion-item{
+    background-color:transparent !important;
+    border-radius:0;
+    border: 0;
+    box-shadow:none;
+    outline:0;
+    &:focus{
+        border: 0;
+        box-shadow:none;
+        outline:0;
+    }
+    .accordion-header{
+        margin:0;
+        border-radius:0;
+        .accordion-button{
+            border: 0;
+            box-shadow:none;
+            outline:0;
+            border-radius:0 !important;
+            background-color:transparent;
+            color:#ffffff;
+            padding:0 10px;
+            &:focus{
+                border: 0;
+                box-shadow:none;
+                outline:0;
+            }
+            i.icons{
+                padding:20px 22px;
+                font-size:22px;
+                line-height:22px;
+            }
+            &:hover{
+                background-color:#ff8600;
+            }
+        }
+    }
+}
