@@ -14,6 +14,9 @@
         width:580px;
         height:100%;
         @include center-content;
+        @include for-phone-only {    
+            width:100%;
+         }
         .center-article{
             width:80%;
             .forgot-password-link{

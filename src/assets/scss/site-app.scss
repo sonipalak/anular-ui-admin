@@ -1,6 +1,15 @@
 @import 'variables';
 @import 'mixins';
 html,body{min-height:100%;}
-body{margin:0;font-family:'Mulish', sans-serif;}
+body{margin:0;font-family:'Mulish', sans-serif;background-color:#f9f9f9}
 *{padding:0;margin:0;box-sizing:border-box;}
 ul, li{list-style:none;padding:0;margin:0;}
+
+/*BOF Header Article********************************/
+.header{
+    background-color:$white;
+    .example-icon{
+        flex:0 1 auto;
+    }
+}
+/*EOF Header Article********************************/
