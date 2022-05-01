@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './_shared/modules/material/material.module';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

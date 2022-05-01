@@ -36,8 +36,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 
-
-
 @NgModule({
   declarations: [],
   imports: [
@@ -118,7 +116,6 @@ import { NgScrollbarModule } from 'ngx-scrollbar';
     MatToolbarModule,
     MatTooltipModule,
     NgScrollbarModule
-
   ]
 })
 export class MaterialModule { }
